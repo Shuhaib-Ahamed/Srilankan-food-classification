@@ -6,7 +6,8 @@ import util
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/classify_image', methods = ['GET', 'POST'])
+
+@app.route('/classify_image', methods=['GET', 'POST'])
 def classify_image():
     image_data = request.form['image_data']
 
@@ -15,9 +16,8 @@ def classify_image():
 
     return response
 
+
 if __name__ == "__main__":
     print("starting python flask server for srilnakan food image classification")
     util.load_saved_artifacts()
-    app.run(port=5000)
-
-
+    app.run(port=5000, debug=False, host="0.0.0.0")
