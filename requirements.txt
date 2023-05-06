@@ -3,6 +3,7 @@ astunparse==1.6.3
 bleach==1.5.0
 cachetools==4.2.4
 charset-normalizer==2.0.12
+flask_cors==3.0.10
 click==8.0.4
 flask==2.0.3
 flatbuffers==1.12
