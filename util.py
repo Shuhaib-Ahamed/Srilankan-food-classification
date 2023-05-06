@@ -13,11 +13,9 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 __classes = []
 __model = None
 
-def classify_image(image_base64_data, file_path=None):
-    if file_path:
-        img = cv2.imread(file_path)
-    else:
-        img = get_cv2_image_from_base64_string(image_base64_data)
+def classify_image(image_base64_data):
+
+    img = get_cv2_image_from_base64_string(image_base64_data)
     images = preprocess_image(img)
     return predict_image_class(images)
 
