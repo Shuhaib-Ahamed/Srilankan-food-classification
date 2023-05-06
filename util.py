@@ -5,7 +5,6 @@ import joblib
 import json
 import numpy as np
 import base64
-import cv2
 from pathlib import Path
 import tensorflow as tf
 from tensorflow.keras.models import model_from_json
